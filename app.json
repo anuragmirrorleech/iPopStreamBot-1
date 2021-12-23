@@ -1,13 +1,12 @@
 {
-  "name": "File-SHare-Bot",
-  "description": "File Share Bot Store Posts in Db Channel And it Can Access By Special Links",
+  "name": "iPopStreamBot",
+  "description": "iPopStreamBot By Royal Krrishna",
   "keywords": [
     "telegram",
     "File",
     "Share"
   ],
-  "repository": "https://github.com/COLD-ONEZ/File-SHare-Bot",
-  "logo": "https://telegra.ph/file/0f3e2323abbfb493ca817.jpg",
+  "repository": "https://github.com/RoyalKrrishna/iPopStreamBot",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your Bot token, Get it from @Botfather",
