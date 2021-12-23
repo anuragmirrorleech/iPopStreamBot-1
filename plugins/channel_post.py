@@ -1,6 +1,3 @@
-#(©)Codexbotz
-#(©)Cold_Onez
-
 import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
@@ -12,7 +9,7 @@ from helper_func import encode
 
 @Bot.on_message(filters.private & filters.user(ADMINS) & ~filters.command(['start','users','broadcast','batch','genlink']))
 async def channel_post(client: Client, message: Message):
-    reply_text = await message.reply_text("Please Wait...😴", quote = True)
+    reply_text = await message.reply_text("Please Wait...", quote = True)
     try:
         post_message = await message.copy(chat_id = client.db_channel.id, disable_notification=True)
     except FloodWait as e:
@@ -27,7 +24,7 @@ async def channel_post(client: Client, message: Message):
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
 
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Sʜᴀʀᴇ URL 🔁", url=f'https://telegram.me/share/url?url={link}')]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share Link 🔁", url=f'https://telegram.me/share/url?url={link}')]])
 
     await reply_text.edit(f"<b>Here is your link</b>\n\n{link}", reply_markup=reply_markup, disable_web_page_preview = True)
 
