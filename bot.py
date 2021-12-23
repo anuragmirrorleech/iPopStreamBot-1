@@ -1,6 +1,3 @@
-#(©)Codexbotz
-#(©)Cold_Onez
-
 import pyromod.listen
 from pyrogram import Client
 import sys
