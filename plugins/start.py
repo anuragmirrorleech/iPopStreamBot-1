@@ -1,4 +1,3 @@
-#(©)CodeXBotz
 import os
 import asyncio
 from pyrogram import Client, filters, __version__
@@ -13,7 +12,7 @@ from database.sql import add_user, query_msg, full_userbase
 
 #=====================================================================================##
 
-WAIT_MSG = """"<b>Processing ...</b>"""
+WAIT_MSG = """"<b>Please Wait...</b>"""
 
 REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
 
@@ -86,15 +85,7 @@ async def start_command(client: Client, message: Message):
             except:
                 pass
         return
-    else:
-        reply_markup = InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
-            ]
-        )
+    
         await message.reply_text(
             text = START_MSG.format(
                 first = message.from_user.first_name,
