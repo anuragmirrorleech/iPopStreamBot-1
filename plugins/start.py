@@ -1,6 +1,3 @@
-#(©)Codexbotz
-#(©)Cold_Onez
-
 import os
 import asyncio
 from pyrogram import Client, filters, __version__
@@ -18,7 +15,7 @@ from database.sql import add_user, query_msg
 
 
 
-WAIT_MSG = """"<b>Processing...🏃🏻‍♂</b>"""
+WAIT_MSG = """"<b>Please Wait 5 Second...⏳</b>"""
 
 REPLY_ERROR = """<code>Use This Command As a Replay To Any Telegram Message WithOut Any Spaces.</code>"""
 
@@ -97,7 +94,7 @@ async def start_command(client: Client, message: Message):
                     InlineKeyboardButton("Cʟᴏsᴇ 🔒", callback_data = "close")
                 ],
                 [
-                    InlineKeyboardButton("🖥️ Hᴏᴡ Tᴏ Oᴡɴ Tʜɪs Bᴏᴛ 🖥️", url="https://youtu.be/ep3u-n_DI_Q")
+                    InlineKeyboardButton("🎥 Movie Website 🎥", url="https://www.iPopstream.ml")
                 ]
             ]
         )
