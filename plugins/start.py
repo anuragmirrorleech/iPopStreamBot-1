@@ -89,12 +89,9 @@ async def start_command(client: Client, message: Message):
     else:
         reply_markup = InlineKeyboardMarkup(
             [
+                
                 [
-                    InlineKeyboardButton("⚡️ Aʙᴏᴜᴛ Mᴇ", callback_data = "about"),
-                    InlineKeyboardButton("Cʟᴏsᴇ 🔒", callback_data = "close")
-                ],
-                [
-                    InlineKeyboardButton("🎥 Movie Website 🎥", url="https://www.iPopstream.ml")
+                    InlineKeyboardButton("🎥 Our Movie Website 🎥", url="https://www.iPopstream.ml")
                 ]
             ]
         )
