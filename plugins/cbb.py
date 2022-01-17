@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>Unknown</a>\n○ Channel : @iP_Movies\n○ Group : @iPopcornMovieGroup</b>",
+            text = f"You can use this bot <b>Absolutely Free</b> but this bot want maintenance every month and maintenance cost is too high.🥺\nSo help our creater by paid small amount <b>₹10/month</b> for maintaining this bot server.\n\nIf you want to use this bot then you have to contact our creater.\n\n<b>○ Creator : <a href='tg://user?id={OWNER_ID}'>Royal Krrishna</a>\n○ Channel : @technokrrish\n○ Group : @technokrrishhelp</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
